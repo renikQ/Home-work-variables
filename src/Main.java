@@ -46,6 +46,7 @@ public class Main {
         System.out.println("Для потери 7 кг веса по 500 гр в день уйдет " + maxNeedDay + " дней.");
         System.out.println("В среднем на потерю 7 кг уйдет " + averagedNedDay + " день.");
 
+
         // задача 5
         int salaryMascha = 67_760;
         int salaryDenis = 83_690;
