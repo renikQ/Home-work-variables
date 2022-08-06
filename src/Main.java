@@ -15,7 +15,7 @@ public class Main {
         double secondBoxer = 82.7;
         double totalWeight;
         totalWeight = firstBoxer + secondBoxer;
-        double weightDifference = secondBoxer - firstBoxer;
+        double weightDifference = Math.abs(secondBoxer - firstBoxer);
         System.out.println("Общий вес бойцов " + totalWeight + "кг");
         System.out.println("Разница в весе бойцов " + weightDifference);
 
@@ -42,8 +42,8 @@ public class Main {
         int minNeedDay = needLoseWeightGr / minLoseWeightDay;
         int maxNeedDay = needLoseWeightGr / maxLoseWeightDay;
         int averagedNedDay = (minNeedDay + maxNeedDay) / 2;
-        System.out.println("Для потери 7 кг по 250 гр в день уйдет " + minNeedDay + " дней.");
-        System.out.println("Для потери 7 кг по 500 гр в день уйдет " + maxNeedDay + " дней.");
+        System.out.println("Для потери 7 кг веса по 250 гр в день уйдет " + minNeedDay + " дней.");
+        System.out.println("Для потери 7 кг веса по 500 гр в день уйдет " + maxNeedDay + " дней.");
         System.out.println("В среднем на потерю 7 кг уйдет " + averagedNedDay + " день.");
 
         // задача 5
@@ -53,13 +53,13 @@ public class Main {
         double increase = 0.10;
         double increaseMascha = salaryMascha * increase;
         double newSalaryMascha = increaseMascha + salaryMascha;
-        System.out.println("Маша теперь получает " + newSalaryMascha + " рублей. Годовой доход вырос на " + increaseMascha + " рублей");
+        System.out.println("Маша теперь получает " + newSalaryMascha + " рублей. Годовой доход вырос на " + (increaseMascha * 12) + " рублей");
         double increaseDenis = salaryDenis * increase;
         double newSalaryDenis = increaseDenis + salaryDenis;
-        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + increaseDenis + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + (increaseDenis * 12) + " рублей");
         double increaseKris = salaryKris * increase;
         double newSalaryKris = increaseKris + salaryKris;
-        System.out.println("Кристина теперь получает " + newSalaryKris + " рубля. Годовой доход вырос на " + increaseKris + " рубля");
+        System.out.println("Кристина теперь получает " + newSalaryKris + " рубля. Годовой доход вырос на " + (increaseKris * 12) + " рубля");
 
     }
 }
